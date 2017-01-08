@@ -72,16 +72,16 @@ li {
     	background-size: cover;
 }
 .bgimg-1 {
-	background-image: url("img/bgimg-01.jpg");
+	background-image: url("../img/bgimg-01.jpg");
 }
 .bgimg-2 {
-	background-image: url("img/bgimg-02.jpg");
+	background-image: url("../img/bgimg-02.jpg");
 }
 .bgimg-3 {
-	background-image: url("img/bgimg-03.jpg");
+	background-image: url("../img/bgimg-03.jpg");
 }
 .bgimg-section {
-	background-image: url("img/bgimg-section.jpg");
+	background-image: url("../img/bgimg-section.png");
 	background-attachment: initial;
     	background-position: initial;
     	background-repeat: repeat;
@@ -120,16 +120,16 @@ li {
 	padding-bottom: 90px;
 }
 .facebook-icon {
-	background-image: url("social-icons/facebook-icon.png");
+	background-image: url("../social-icons/facebook-icon.png");
 }
 .instagram-icon {
-	background-image: url("social-icons/instagram-icon.png");
+	background-image: url("../social-icons/instagram-icon.png");
 }
 .linkedin-icon {
-	background-image: url("social-icons/linkedin-icon.png");
+	background-image: url("../social-icons/linkedin-icon.png");
 }
 .github-icon {
-	background-image: url("social-icons/github-icon.png");
+	background-image: url("../social-icons/github-icon.png");
 }
 h1 {
 	text-align: center;
