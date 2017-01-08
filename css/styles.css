@@ -23,8 +23,8 @@ html, body {
 	top: 0;
 	left: 0;
 	text-align: right;
-    z-index: 10;
-    text-transform:uppercase;
+    	z-index: 10;
+    	text-transform:uppercase;
 }
 div > a {
 	line-height: 75px;
@@ -37,8 +37,8 @@ div > .container-contact > p {
 	margin-top: 35px;
 }
 p > a {
-  text-decoration: none;
-  color: #1abc9c;
+  	text-decoration: none;
+  	color: #1abc9c;
 }
 p > a:hover {
 	font-weight: bold;
@@ -67,26 +67,26 @@ li {
 	max-width: 100%;
 	margin-bottom: 0; 
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-size: cover;
 }
 .bgimg-1 {
-	background-image: url(https://images.unsplash.com/photo-1468421870903-4df1664ac249?dpr=1&auto=format&fit=crop&);
+	background-image: url("img/bgimg-01.jpg");
 }
 .bgimg-2 {
-	background-image: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?dpr=1&auto=);
+	background-image: url("img/bgimg-02.jpg");
 }
 .bgimg-3 {
-	background-image: url("https://images.unsplash.com/photo-1416339276121-ba1dfa199912?dpr=1&auto");
+	background-image: url("img/bgimg-03.jpg");
 }
 .bgimg-section {
-	background-image: url("https://subtlepatterns.com/patterns/pink_rice.png");
+	background-image: url("img/bgimg-section.jpg");
 	background-attachment: initial;
-    background-position: initial;
-    background-repeat: repeat;
-    background-size: initial;
-    /*min-height: 100%;*/
+    	background-position: initial;
+    	background-repeat: repeat;
+    	background-size: initial;
+    	/*min-height: 100%;*/
 }
 .bckgrnd-img {
 	margin-top: 100px;
@@ -96,11 +96,11 @@ li {
 	width: 64px;
 	margin-bottom: 0; 
 	background-attachment: initial;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 64px 64px;
-    float: right;
-    text-decoration: none;
+    	background-position: left;
+    	background-repeat: no-repeat;
+    	background-size: 64px 64px;
+    	float: right;
+    	text-decoration: none;
 }
 .facebook-icon:hover, .linkedin-icon:hover {
 	background-color: rgba(0, 0, 0, 0.2);
@@ -111,25 +111,25 @@ li {
    	border-radius: 20px;
 }
 .container-icons {
-    display: inline-block;
-    text-align: center;
-    width: 75%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 25px;
+    	display: inline-block;
+    	text-align: center;
+    	width: 75%;
+    	margin-left: 5%;
+    	margin-right: 5%;
+    	margin-top: 25px;
 	padding-bottom: 90px;
 }
 .facebook-icon {
-	background-image: url("http://grasslandlodge.com/master/image_files/2015-05-23_1383576920_Facebook.png");
+	background-image: url("social-icons/facebook-icon.png");
 }
 .instagram-icon {
-	background-image: url("http://www.gfxmag.com/wp-content/uploads/2016/07/instagram-glyph-icon-vector-logo.png");
+	background-image: url("social-icons/instagram-icon.png");
 }
 .linkedin-icon {
-	background-image: url("https://freeiconshop.com/files/edd/linkedin-outline.png");
+	background-image: url("social-icons/linkedin-icon.png");
 }
 .github-icon {
-	background-image: url("http://vectorlogofree.com/wp-content/uploads/2014/02/25231-github-cat-in-a-circle-icon-vector-icon-vector-eps.png");
+	background-image: url("social-icons/github-icon.png");
 }
 h1 {
 	text-align: center;
@@ -216,9 +216,9 @@ section.card p, .inner-row p {
 	margin-left: 5%;
 }
 .clearfix::after {
-   content: " ";
-   display: table;
-   clear: both;
+	content: " ";
+   	display: table;
+   	clear: both;
 }
 .key {
 	display: block;
@@ -300,13 +300,13 @@ section.card p, .inner-row p {
 	font-size: 9pt;
 }
 h2 + p + p {
-    text-align: center;
-    margin-bottom: 35px;
+    	text-align: center;
+    	margin-bottom: 35px;
 }
 section > img {
-    display: inline-block;
-    text-align: center;
-    vertical-align: bottom;
+    	display: inline-block;
+    	text-align: center;
+    	vertical-align: bottom;
 }
 /*.work-img-3 {
 	padding-bottom: 7%;
