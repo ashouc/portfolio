@@ -8,6 +8,7 @@
 <title>Alex Shoucri</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.light.min.css">
 </head>
 <body>
 	<header id="nav" role="navigation">
@@ -20,46 +21,52 @@
 			    	</ul>
 			    </div>
 			</div>
-			<div class="show-in-small container-menu">
-				<a href="#home">Welcome!</a>
-				<a class="about-sm" href="#about">About</a>
-				<a class="portfolio-sm" href="#work">Portfolio</a>
-				<a class="contact-sm" href="#contact">Contact</a>
+			<div id="navbar">
+				<div class="show-in-small container-menu">
+					<div>
+						<a href="#home" class="col-sm-3">Welcome!</a>
+						<a href="#about" class="about-sm col-sm-3">About</a>
+						<a href="#work" class="portfolio-sm col-sm-3">Portfolio</a>
+						<a href="#contact" class="contact-sm col-sm-3">Contact</a>
+					</div>
+				</div>
 			</div>
 		</div>	   
 	</header>
-
 	<h1 id="home" class="bgimg-1"></h1>
-	<div class="container container-about bgimg-section clearfix">
+	<div id="about" class="container container-about bgimg-section clearfix">
 		<h2 id="about">A Little About Moi</h2>
 		<div class="inner-row">	
 			<div class="col-lg-6 col-md-6 col-sm-12 container">	
 				<p>Hi! My name is Alex Shoucri and I am a developer who once was a chemical engineer. I am a curious individual who is passionate about science, math and technology. I was first introduced to programming during my studies, in the context of scientific computation. And, I couldn't go back after that!</p>
 				<p>The one thing I loved about engineering was designing and developping processes. How can you brilliantly achieve this challenge? By applying these key properties: creativity, determination, innovation, passion and most importantly, honesty. </p>
-				<p>After completing my B.Eng., I was invited to attend a workshop at PyCon 2014 in Montreal, QC, about the benefits of programming. It was then &amp there that I had an epiphany, realized the power &amp potential of developping software, and the millions of possibilities that existed in creating something new and useful for the public.</p>
-				<p>In 2015, I finally completed my M.A.Sc. and entered the job market, only to realize very quickly that I could do so much more for our society through programming. So, <span>I went rogue</span>.</p> 
+				<!-- <p>After completing my B.Eng., I was invited to attend a workshop at PyCon 2014 in Montreal, QC, about the benefits of programming. It was then &amp there that I had an epiphany, realized the power &amp potential of developping software, and the millions of possibilities that existed in creating something new and useful for the public.</p> -->
+				
+				<!-- only to realize very quickly that I could do so much more for our society through programming. -->  
 			</div>	
 			<div class="col-lg-6 col-md-6 col-sm-12 container">
-				<p>At first, I started learning front-end development on the side while I was curator and organizer of the popular <a href="https://popmontreal.com/en/section/puces-pop/" target="_blank">Puces POP</a>, created by <a href="https://popmontreal.com/" target="_blank">POP Montreal</a>. Puces POP is an evergrowing indoor marketplace like no other: it promotes the Montreal artisan indie scene and attracts +10,000 visitors to every event.</p>
-				<p> When I resigned in October 2016, I started front-end development full-time and full-blast! I am working to become a full-stack developper.</p>
+				<!-- <p>At first, I started learning front-end development on the side while I was curator and organizer of the popular <a href="https://popmontreal.com/en/section/puces-pop/" target="_blank">Puces POP</a>, created by <a href="https://popmontreal.com/" target="_blank">POP Montreal</a>. Puces POP is an evergrowing indoor marketplace like no other: it promotes the Montreal artisan indie scene and attracts +10,000 visitors to every event.</p>
+				<p> When I resigned in October 2016, I started front-end development full-time and full-blast! I am working to become a full-stack developper.</p> -->
+				<p>In 2015, I finally completed my M.A.Sc. and entered the job market. In October 2016, <span>I went rogue</span> and I started front-end development full-time and full-blast!.</p>
 				<p>My long-term goals include back-end development and data analysis. Until then, it would be my pleasure to create something awesome for you in your image, as your front-end developer.</p>
 				<p>I live on coffee and music. They are the two things that fuel my work. <a href="#work">Have a look</a>, I've prepared some examples.</p>
 			</div>
 		</div>
+	
 		<h2 id="about">Skills &amp Expertise</h2>
-		<div class="inner-row">
-    		<div class="col-lg-6 col-md-6 col-sm-12 container">
-      			<h3 class="title"> Front-end Developer </h3>
-					<p>Fonction &amp Bootstrap are my BFFs, HTML &amp CSS are my frenemies. Now, let me make worthwhile! In other words, Trust me, I'm an Engineer. I got this!</p>
-			</div>
-    		<div class="col-lg-6 col-md-6 col-sm-12 container">
-     			<h3 class="title"> WordPress Developer </h3>
-					<p>I have also dabbled with that. WordPress is by far the quickest and simplest way for you to manage your content on your website.</p>
-    		</div>
-  		</div>     
+			<div class="inner-row">
+	    		<div class="col-lg-6 col-md-6 col-sm-12 container">
+	      			<h3 class="title"> Front-end Developer </h3>
+						<p>Fonction &amp Bootstrap are my BFFs, HTML &amp CSS are my frenemies. Now, let me make worthwhile! In other words, Trust me, I'm an Engineer. I got this!</p>
+				</div>
+	    		<div class="col-lg-6 col-md-6 col-sm-12 container">
+	     			<h3 class="title"> WordPress Developer </h3>
+						<p>I have also dabbled with that. WordPress is by far the quickest and simplest way for you to manage your content on your website.</p>
+	    		</div>
+  			</div>    
 	</div>
 	<div class="bgimg-2"></div>
-	<div class="container container-portfolio clearfix">
+	<div id="work" class="container container-portfolio clearfix">
 		<h2 id="work">Samples of My Work</h2>
       		<p>Truthfully, this web site is my very first project. I will also be updating and and using it as my portfolio. </p>
       		<p>Until then, I've written the lyrics of some songs that came to mind during the creation of my site. So, there's more to come!</p>
@@ -175,7 +182,7 @@
 		</div>
 	</div>
 	<div class="bgimg-3"></div>
-	<div class="container bgimg-section clearfix">
+	<div id="contact" class="container bgimg-section clearfix">
 		<h2 id="contact">Thanks for Reaching out</h2>
 		<div class="col-lg-6 col-md-6 col-sm-12 container-contact">
 			<h3 class="title">Want to get in touch with me? </h3>
@@ -197,7 +204,8 @@
 				</div>
 			</div>					
 		</div>
-	</div>		
+	</div>
+	<div class="bgimg-4"></div>		
 	<div id="footer">
 		<div class="footer-inner">
 			<div class="footer-row">
@@ -206,7 +214,20 @@
 			</div>
 		</div>	
 	</div>
+	<!-- <div id="mobile-footer">
+		<div class="inner-mobile-footer">
+			<div>
+				<a href="#home" class="col-sm-3">Welcome!</a>
+				<a href="#about" class="about-sm col-sm-3">About</a>
+				<a href="#work" class="portfolio-sm col-sm-3">Portfolio</a>
+				<a href="#contact" class="contact-sm col-sm-3">Contact</a>
+			</div>
+		</div>
+	</div> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
 <script src="javascript/script.js"></script>
 </body>
 </html>

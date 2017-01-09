@@ -44,7 +44,7 @@ p > a:hover {
 	font-weight: bold;
 }
 div > a:hover {
-	line-height: 55px;
+	line-height: 25px;
 	color: #1abc9c;
 	font-weight: bold;
 	text-decoration: none;
@@ -61,8 +61,12 @@ ul {
 li {
 	float: left;
 }
+.active {
+	color: #1abc9c;
+	font-weight: bold;
+}
 /* END HEADER */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	height: 100%;
 	max-width: 100%;
 	margin-bottom: 0; 
@@ -80,6 +84,9 @@ li {
 .bgimg-3 {
 	background-image: url("../img/bgimg-03.jpg");
 }
+.bgimg-4 {
+	background-image: url("../img/bgimg-07.jpg");
+}
 .bgimg-section {
 	background-image: url("../img/bgimg-section-pink.png");
 	background-attachment: initial;
@@ -92,13 +99,13 @@ li {
 	margin-top: 100px;
 }
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
-	height: 64px;
-	width: 64px;
+	height: 48px;
+	width: 48px;
 	margin-bottom: 0; 
 	background-attachment: initial;
 	background-position: left;
 	background-repeat: no-repeat;
-	background-size: 64px 64px;
+	background-size: 48px 48px;
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
@@ -159,6 +166,7 @@ div > h2{
 	padding-top: 90px;
 	margin-top:0;
 	margin-bottom: 0;
+	display: block;
 }
 p {
 	color: #8d8d8d;
@@ -348,6 +356,9 @@ section > img {
     text-align: center;
     vertical-align: middle;
 }
+#mobile-footer {
+	display: none;
+}
 /*******Image Hoover Effect Start*******/
 .hovereffect {
   width: 100%;
@@ -494,6 +505,7 @@ section > img {
         clear: both;
         max-height: 75%;
     }
+
 }
 
 /*******For Devices with width below 767px ********/
@@ -514,15 +526,18 @@ section > img {
 	.col-sm-11 { width: 91.66%; }
 	.col-sm-12 { width: 100%; }
 
-	.bgimg-1, .bgimg-2, .bgimg-3 {
+	.bgimg-1 {
+		margin: 0;
+        background-attachment: scroll;
+        clear: both;
+        max-height: 100%;
+	}
+	.bgimg-2, .bgimg-3 {
 		margin: 0;
         background-attachment: scroll;
         clear: both;
         max-height: 50%;
     }
-    .portfolio-sm, .about-sm, .contact-sm {
-		border-top: 3px double #F5F5F5;
-	}
     .work-img-3 {
 		padding-bottom: 0;
 	}
@@ -536,43 +551,25 @@ section > img {
 		margin-bottom: 25px;
 	}
 	#nav {
-		padding-bottom: 400px;
-		transition: all 0.3s ease;
-		display: block;
-		margin-right: 0;
-		width: 100%;
-		height: 75px;
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		background-color: #FFF;
-		position: static;
-		text-align: left;
-		padding-right: 0;
-	    z-index: 10;
+		height: auto;
 	}
 	#keyboard {
-		display: inline-block;
-		vertical-align: middle;
-		margin-top: 5%;
-		margin-right: 1px;
+		display: none;
 	}
 	.header {
 		float: none;
 		display: block;
-		height: 100%;
 	}
 	div > a {
-		line-height: 75px;
 		color: #222222;
+		line-height: 50px;
 		font-weight: bold;
 		text-decoration: none;
-		font-size: 18px;
+		font-size: 13px;
 		display: block;
-		width: 100%;
-		clear: both;
 	}
 	div > a:hover {
-		line-height: 75px;
+/*		line-height: 75px;*/
 		color: #1abc9c;
 		font-weight: bold;
 		text-decoration: none;
@@ -582,15 +579,51 @@ section > img {
     	margin-bottom: 35px;
 	}	
     .show-in-small {
-		display:inherit !important;
-		width: 100%;
+		display: none;
 	}
 	.hide-in-small {
 		display: none !important;
 	}
 	section.card p, .inner-row p {
-	text-align: justify;
+		text-align: justify;
 	}
 	.container-img {
-	margin: 0 0 15px 0;
+		margin: 0 0 15px 0;
+	}
+	#footer {
+	    display: block;
+	    width: 100%;
+	    height: 200px;
+	    background-color: #222222;
+	    position: relative;
+	 	bottom: 0;
+	    left: 0;
+	    right: 0;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+	.footer-inner {
+	    width: 100%;
+	    padding-left: 20px;
+	    padding-right: 20px;
+	    float: none;
+	    clear: both;
+	    font-size: 13px;
+	    text-align: center;
+	    vertical-align: middle;
+	}
+	#navbar > div {
+		display: block;
+		background-color: #FFF;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+	    float: none;
+	    z-index: 100;
+	    font-size: 13px;
+	    text-align: center;
+	    vertical-align: middle;
+	    height: 50px;
+    }
 }
