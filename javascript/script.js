@@ -15,7 +15,7 @@
 // Section Underlying
 $(document).ready(function () {
     $navLinks = $('#navbar div div a');
-    $(document).on("scroll", onScroll);
+   // $(document).on("scroll", onScroll);
     
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
