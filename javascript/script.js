@@ -14,6 +14,7 @@
 
 // Section Underlying
 $(document).ready(function () {
+    $navLinks = $('#navbar div div a');
     $(document).on("scroll", onScroll);
     
     //smoothscroll
@@ -41,14 +42,14 @@ $(document).ready(function () {
         paddingTop: "250px" 
     });
 });
-
+var $navLinks;
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
-    $('#navbar a').each(function () {
+    $navLinks.each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (scrollPos >= refElement.position().top - 75 && scrollPos < refElement.position().top + refElement.height() + 30 - 75) {
-            $('#navbar div div a').removeClass("active");
+            $navLinks.removeClass("active");
             currLink.addClass("active");
         }
         else{

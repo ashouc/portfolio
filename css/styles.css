@@ -141,7 +141,9 @@ li {
 }
 h1 {
 	text-align: center;
+	letter-spacing: 4px;
 	font-size: 60pt;
+	font-weight: 400;
 	padding-top: 100px;
 	color: rgba(255,255,255,0);
 	transition: all 2.0s cubic-bezier(0.4, 0, 0.2, 1);
