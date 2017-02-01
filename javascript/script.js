@@ -38,7 +38,7 @@ $(document).ready(function () {
         });
     });
     $('h1').css({
-        color: "rgba(255,255,255,0.8)",
+        color: "rgba(255,255,255,0.85)",
         paddingTop: "250px" 
     });
 });
@@ -65,7 +65,7 @@ function onScroll(event){
         });
     } else {
         $introTitle.css({
-            color: "rgba(255,255,255,0.8)",
+            color: "rgba(255,255,255,0.85)",
             paddingTop: '250px'
         });
     }

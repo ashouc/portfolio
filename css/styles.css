@@ -105,7 +105,7 @@ li {
 	background-size: cover;
 }
 .bgimg-1 {
-	background-image: url("../img/bgimg-06-low.jpg");
+	background-image: url("../img/bgimg-06-new-low.jpg");
 }
 .bgimg-2 {
 	background-image: url("../img/bgimg-02-low.jpg");
@@ -141,8 +141,10 @@ li {
 }
 h1 {
 	text-align: center;
-	letter-spacing: 4px;
-	font-size: 60pt;
+	letter-spacing: 30px;
+	font-size: 50px;
+	line-height: 100px;
+	font-family: 'Dosis', 'Arial' sans-serif;
 	font-weight: 400;
 	padding-top: 100px;
 	color: rgba(255,255,255,0);
@@ -179,8 +181,10 @@ p {
 	text-align: center;
 	margin-right: 5%;
   	margin-left: 5%;
-  	line-height: 26px;
 }
+.inner-row .one-liner {
+	text-align: center;
+} 
 .container-portfolio > section.card {
 	padding: 50px 10px 10px 10px;
 	margin-bottom: 20px;
@@ -338,7 +342,6 @@ section > img {
 }
 .footer-inner {
     width: 100%;
-    max-width: 1680px;
     padding-left: 20px;
     padding-right: 20px;
     float: none;
