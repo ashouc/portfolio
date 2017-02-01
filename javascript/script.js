@@ -1,5 +1,5 @@
 // Smooth Page Scrolling
-$('a[href*="#"]:not([href="#"])').click(function() {
+/*$('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -10,7 +10,7 @@ $('a[href*="#"]:not([href="#"])').click(function() {
       return false;
     }
   }
-});
+});*/
 
 // Section Underlying
 $(document).ready(function () {
@@ -31,10 +31,14 @@ $(document).ready(function () {
         $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top+2
-        }, 1000, 'swing', function () {
+        }, 1250, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
+    });
+    $('h1').css({
+        color: "rgba(255,255,255,0.8)",
+        paddingTop: "250px" 
     });
 });
 
@@ -43,7 +47,7 @@ function onScroll(event){
     $('#navbar a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (scrollPos >= refElement.position().top - 75 && scrollPos < refElement.position().top + refElement.height() + 30 - 75) {
             $('#navbar div div a').removeClass("active");
             currLink.addClass("active");
         }
@@ -51,6 +55,19 @@ function onScroll(event){
             currLink.removeClass("active");
         }
     });
+
+    var $introTitle = $('h1');
+    if (scrollPos >= $introTitle.height() / 6) {
+        $introTitle.css({
+            color: "rgba(255,255,255,0)",
+            paddingTop: '250px'
+        });
+    } else {
+        $introTitle.css({
+            color: "rgba(255,255,255,0.8)",
+            paddingTop: '250px'
+        });
+    }
 }
 
 

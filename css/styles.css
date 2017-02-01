@@ -105,19 +105,19 @@ li {
 	background-size: cover;
 }
 .bgimg-1 {
-	background-image: url("../img/bgimg-06.png");
+	background-image: url("../img/bgimg-06-low.jpg");
 }
 .bgimg-2 {
-	background-image: url("../img/bgimg-02.jpg");
+	background-image: url("../img/bgimg-02-low.jpg");
 }
 .bgimg-3 {
-	background-image: url("../img/bgimg-03.jpg");
+	background-image: url("../img/bgimg-03-low.jpg");
 }
 .bgimg-4 {
-	background-image: url("../img/bgimg-07.jpg");
+	background-image: url("../img/bgimg-07-low.jpg");
 }
 .bgimg-section {
-	background-image: url("../img/bgimg-section-pink.png");
+	background-image: url("../img/bgimg-section-pink.jpg");
 	background-attachment: initial;
     background-position: initial;
 	background-repeat: repeat;
@@ -141,6 +141,10 @@ li {
 }
 h1 {
 	text-align: center;
+	font-size: 60pt;
+	padding-top: 100px;
+	color: rgba(255,255,255,0);
+	transition: all 2.0s cubic-bezier(0.4, 0, 0.2, 1);
 }
 h2, h2 a {
 	color: #222222;
