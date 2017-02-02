@@ -564,6 +564,32 @@ section > img {
 		float: none;
 		display: block;
 	}
+	h1 {
+		text-align: center;
+		letter-spacing: 7px;
+		font-size: 20px;
+		line-height: 30px;
+		font-family: 'Dosis', 'Arial' sans-serif;
+		font-weight: 400;
+		padding-top: 100px;
+		color: rgba(255,255,255,0);
+		transition: all 2.0s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	h2, h2 a {
+		color: #222222;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: bold;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		text-align: center;
+		clear: both;
+		padding-bottom: 20px;
+	}
+	h3 {
+		font-size: 15px;
+		letter-spacing: 3px;
+	}
 	div > a {
 		color: #222222;
 		line-height: 50px;
@@ -587,6 +613,9 @@ section > img {
 	}
 	.hide-in-small {
 		display: none !important;
+	}
+	.inner-row .one-liner {
+		text-align: justify;
 	}
 	section.card p, .inner-row p {
 		text-align: justify;
