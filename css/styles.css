@@ -91,10 +91,8 @@ li {
 .arrow-up > div > a > i:hover {
 	transform: scale(1.4);
 	color: rgba(10, 10, 10, 0.7);
+	cursor: pointer;
 }
-/*h1 > .arrow-up {
-	display: none;
-}*/
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	height: 100%;
 	max-width: 100%;
@@ -130,12 +128,23 @@ li {
 .facebook-icon, .instagram-icon, .linkedin-icon, .github-icon {
 	line-height: inherit;
 }
+.icon:hover {
+	cursor: default;
+}
 .container-icons {
 	width: 100%;
 	margin-top: 25px;
 	padding-bottom: 200px;
 }
 .container-icons > div {
+	display: inline-block;
+	text-align: center;
+}
+.container-icons-skills {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.container-icons-skills > div {
 	display: inline-block;
 	text-align: center;
 }
@@ -164,6 +173,13 @@ h2, h2 a {
 h3 {
 	font-size: 18px;
 	letter-spacing: 3px;
+}
+h3 + p + p {
+	padding-bottom: 90px;
+}
+
+.title > p {
+	padding-bottom: 90px;
 }
 .title {
 	color: #222222;
@@ -614,8 +630,8 @@ section > img {
 	.hide-in-small {
 		display: none !important;
 	}
-	.inner-row .one-liner {
-		text-align: justify;
+	.inner-row .one-liner, .inner-row > .one-liner {
+		text-align: center;
 	}
 	section.card p, .inner-row p {
 		text-align: justify;
