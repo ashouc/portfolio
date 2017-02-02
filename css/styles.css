@@ -174,7 +174,7 @@ h3 {
 	font-size: 18px;
 	letter-spacing: 3px;
 }
-h3 + p + p {
+h3 + p + p + p {
 	padding-bottom: 90px;
 }
 
