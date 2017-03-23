@@ -93,7 +93,7 @@ li {
 	color: rgba(10, 10, 10, 0.7);
 	cursor: pointer;
 }
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+/*.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	height: 100%;
 	max-width: 100%;
 	margin-bottom: 0; 
@@ -101,8 +101,8 @@ li {
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.bgimg-1 {
+}*/
+/*.bgimg-1 {
 	background-image: url("../img/bgimg-06-new-low.jpg");
 }
 .bgimg-2 {
@@ -113,14 +113,13 @@ li {
 }
 .bgimg-4 {
 	background-image: url("../img/bgimg-07-low.jpg");
-}
+}*/
 .bgimg-section {
 	background-image: url("../img/bgimg-section-pink.jpg");
 	background-attachment: initial;
     background-position: initial;
 	background-repeat: repeat;
 	background-size: initial;
-	/*min-height: 100%;*/
 }
 .bckgrnd-img {
 	margin-top: 100px;
@@ -482,6 +481,27 @@ section > img {
 		padding-right: 2em;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.11);
 	}
+	.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+		height: 100%;
+		max-width: 100%;
+		margin-bottom: 0; 
+		background-attachment: fixed;
+	    background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.bgimg-1 {
+		background-image: url("../img/bgimg-06-new-low.jpg");
+	}
+	.bgimg-2 {
+		background-image: url("../img/bgimg-02-low.jpg");
+	}
+	.bgimg-3 {
+		background-image: url("../img/bgimg-03-low.jpg");
+	}
+	.bgimg-4 {
+		background-image: url("../img/bgimg-07-low.jpg");
+	}
 }
 
 /*******For Devices with width of between 768px & 991px*******/
@@ -514,9 +534,22 @@ section > img {
 		margin: 0;
         background-attachment: scroll;
         clear: both;
-        max-height: 75%;
+        max-height: 100%;
     }
+    .bgimg-1 {
+		background-image: url("../img/bgimg-06-new-low-md.jpg");
+	}
+	.bgimg-2 {
+		background-image: url("../img/bgimg-02-low-md.jpg");
+	}
+	.bgimg-3 {
+		background-image: url("../img/bgimg-03-low-md.jpg");
+	}
+	.bgimg-4 {
+		background-image: url("../img/bgimg-07-low-md.jpg");
+	}
 
+	img .hidden
 }
 
 /*******For Devices with width below 767px ********/
@@ -549,6 +582,18 @@ section > img {
         clear: both;
         max-height: 50%;
     }
+    .bgimg-1 {
+		background-image: url("../img/bgimg-06-new-low-md.jpg");
+	}
+	.bgimg-2 {
+		background-image: url("../img/bgimg-02-low-md.jpg");
+	}
+	.bgimg-3 {
+		background-image: url("../img/bgimg-03-low-md.jpg");
+	}
+	.bgimg-4 {
+		background-image: url("../img/bgimg-07-low-md.jpg");
+	}
 	.container-portfolio, .container-about, .container-contact {
 		padding-left: 5px;
 		padding-right: 5px;
