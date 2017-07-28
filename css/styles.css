@@ -133,6 +133,8 @@ li {
 	width: 100%;
 	margin-top: 25px;
 	padding-bottom: 200px;
+	padding-left: 10%;
+    padding-right: 10%;
 }
 .container-icons > div {
 	display: inline-block;
@@ -148,7 +150,7 @@ li {
 }
 h1 {
 	text-align: center;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	font-size: 60pt;
 	font-weight: 400;
 	padding-top: 100px;
@@ -215,7 +217,6 @@ section.card p, .inner-row p {
 .container-menu {
 	padding-left: 10px;
 	padding-right: 10px;
-	/*min-height: 100px;*/
 	letter-spacing: 4px;
 }
 .container-img {
@@ -235,8 +236,6 @@ section.card p, .inner-row p {
 	margin-left: 10%;
 }
 .inner-row-img {
-	/*margin-right: 5%;
-	margin-left: 5%;*/
 	width: 100%;
 	display: inline-block;
 	text-align: center;
