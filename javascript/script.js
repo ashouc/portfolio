@@ -1,4 +1,4 @@
-
+// Smooth Page Scrolling
 // Section Underlying
 $(document).ready(function () {
     $navLinks = $('#navbar div div a');
@@ -24,10 +24,18 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
-    $('h1').css({
-        color: "rgba(255,255,255,0.85)",
-        paddingTop: "250px" 
-    });
+    console.log($(window).height(), $(window).width())
+    if($(window).height() <= 400  ) {
+           $('h1').css({
+            color: "rgba(255,255,255,0.9)",
+            paddingTop: '175px'
+            }); 
+        } else {
+           $('h1').css({
+            color: "rgba(255,255,255,0.9)",
+            paddingTop: '250px'
+            });
+        }
 });
 var $navLinks;
 function onScroll(event){
@@ -39,23 +47,29 @@ function onScroll(event){
             $navLinks.removeClass("active");
             currLink.addClass("active");
         }
-        else {
+        else{
             currLink.removeClass("active");
         }
     });
-
+    
     var $introTitle = $('h1');
     if (scrollPos >= $introTitle.height() / 6) {
-        $introTitle.css({
+        if($(window).height() <= 400  ) {
+           $introTitle.css({
+            color: "rgba(255,255,255,0)",
+            paddingTop: '175px'
+            }); 
+        } else {
+            $introTitle.css({
             color: "rgba(255,255,255,0)",
             paddingTop: '250px'
-        });
+            });
+        }
+        
     } else {
         $introTitle.css({
-            color: "rgba(255,255,255,0.85)",
+            color: "rgba(255,255,255,0.8)",
             paddingTop: '250px'
         });
     }
 }
-
-

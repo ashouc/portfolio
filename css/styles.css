@@ -34,7 +34,6 @@ div > a {
 	font-size: 16px;
 }
 div > a > i {
-	/*line-height: 75px;*/
 	color: #8d8d8d;
 	font-weight: bold;
 	text-decoration: none;
@@ -93,7 +92,7 @@ li {
 	color: rgba(10, 10, 10, 0.7);
 	cursor: pointer;
 }
-/*.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
 	height: 100%;
 	max-width: 100%;
 	margin-bottom: 0; 
@@ -101,8 +100,8 @@ li {
     background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}*/
-/*.bgimg-1 {
+}
+.bgimg-1 {
 	background-image: url("../img/bgimg-06-new-low.jpg");
 }
 .bgimg-2 {
@@ -113,7 +112,7 @@ li {
 }
 .bgimg-4 {
 	background-image: url("../img/bgimg-07-low.jpg");
-}*/
+}
 .bgimg-section {
 	background-image: url("../img/bgimg-section-pink.jpg");
 	background-attachment: initial;
@@ -149,10 +148,8 @@ li {
 }
 h1 {
 	text-align: center;
-	letter-spacing: 30px;
-	font-size: 50px;
-	line-height: 100px;
-	font-family: 'Dosis', 'Arial' sans-serif;
+	letter-spacing: 4px;
+	font-size: 60pt;
 	font-weight: 400;
 	padding-top: 100px;
 	color: rgba(255,255,255,0);
@@ -602,13 +599,8 @@ section > img {
 	.container-menu {
 		padding-left: 1px;
 		padding-right: 1px;
-		/*min-height: 100px;*/
 		letter-spacing: 2px;
 	}
-    /*.menu-small { 
-		text-align:center; 
-		text-transform:uppercase; 
-	}*/
 	.key {
 		margin-left: 5px;
 		margin-right: 10px;
@@ -627,12 +619,9 @@ section > img {
 	}
 	h1 {
 		text-align: center;
-		letter-spacing: 7px;
-		font-size: 20px;
-		line-height: 30px;
-		font-family: 'Dosis', 'Arial' sans-serif;
+		letter-spacing: 4px;
+		font-size: 25pt;
 		font-weight: 400;
-		padding-top: 100px;
 		color: rgba(255,255,255,0);
 		transition: all 2.0s cubic-bezier(0.4, 0, 0.2, 1);
 	}
